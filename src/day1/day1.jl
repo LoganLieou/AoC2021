@@ -21,10 +21,6 @@ fsol(input::Vector{Int64})::Int64 = map((a, b) -> a < b, input, @view(input[2:en
 @show fsol(parse.(Int64, input))
 
 # part 2 imperitive
-"""
-damn this shit dumb asf
-working on this right now
-"""
 function sol2(input::Vector{Int64})::Int64
 	count = temp = temp_sum = 0
 	for i = 4:length(input)
