@@ -1,7 +1,7 @@
 parse_line(x) = let fields = split(x, " ")
 	Symbol(fields[1]), parse(Int, fields[2])
 end
-f = open("input.txt", "r"); lines = parse_line.(readlines(f)); close(f)
+lines = readlines("input.txt"); lines = parse_line.(lines);
 
 function part1(input)
 	pos = 0
